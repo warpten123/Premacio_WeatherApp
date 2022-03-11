@@ -5,11 +5,13 @@
     width: 200px;
     height: 350px;
     background: rgb(0,0,0);
-    background: linear-gradient((180deg, rgba(0,0,0,1) 0%, rgb(20, 13, 218)));
+    background: linear-gradient(to bottom right, black, blue);
     color: white;;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px auto;
 }
 .weatherWidgetRow{
+    text-align: center;
  display: block;
  margin: 0 auto;
  width: fit-content;   
@@ -49,9 +51,10 @@
 }
 .input-text{
     display: inline;
-    margin: 0;
+    margin: 5;
     border-radius: 0.4rem;
     padding: 10px;
+
 }
 .list ul li button{
     position: absolute;
@@ -108,3 +111,12 @@ ul{
     max-width: 500px;
     margin: auto;
 }
+.bg-image {
+    background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
