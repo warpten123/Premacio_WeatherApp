@@ -1,0 +1,122 @@
+.divWeatherMain{
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    height: 350px;
+    background: rgb(0,0,0);
+    background: linear-gradient(to bottom right, black, blue);
+    color: white;;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px auto;
+}
+.weatherWidgetRow{
+    text-align: center;
+ display: block;
+ margin: 0 auto;
+ width: fit-content;   
+}
+.sun{
+    margin-top: 10px;
+    color: yellow;
+    filter: drop-shadow(1px 1px 10px yellow);
+}
+.moon{
+    margin-top: 10px;
+    color: white;
+    filter: drop-shadow(1px 1px 10px white);
+}
+.cloudDiv{
+    margin-top: -40px;
+}
+.cloud{
+    color: rgb(104,175,197);
+    filter: drop-shadow(1px 1px 5px rgb(104,175,197));
+    animation-name: cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes cloudMovement{
+    from{margin-left: -55px;}
+    to{margin-left: 65px;}
+}
+
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-text{
+    display: inline;
+    margin: 5;
+    border-radius: 0.4rem;
+    padding: 10px;
+
+}
+.list ul li button{
+    position: absolute;
+    right: 0%;
+    background: #f34541;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+}
+
+.add-btn{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #7313cb;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+
+}
+.app-title{
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 70px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.list ul li{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+    background-color: #fff;
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #cccccc;
+    padding: 10px;
+    position: relative;
+}
+.container{
+    color: #fff;
+    max-width: 500px;
+    margin: auto;
+}
+.bg-image {
+    background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
